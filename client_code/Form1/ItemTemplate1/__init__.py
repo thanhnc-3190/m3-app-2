@@ -11,7 +11,7 @@ class ItemTemplate1(ItemTemplate1Template):
     # Any code you write here will run before the form opens.
 
     # Create a CheckBox and add it to column "B" of the DataGrid on Form1
-    self.completed_box = CheckBox(checked=self.item['complete'], align="center")
+    self.completed_box = CheckBox(checked=self.item['is_completed'], align="center")
     self.add_component(self.completed_box, column="B")
     self.completed_box.set_event_handler('change', self.update_task)
 

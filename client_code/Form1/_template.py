@@ -32,7 +32,7 @@ class Form1Template(HtmlPanel):
     # Add two columns to the Data Grid
     self.tasks_grid.columns = [
       { "id": "A", "title": "Task name", "data_key": "name" },
-      { "id": "B", "title": "Completed", "data_key": "complete", "width": 100 },
+      { "id": "B", "title": "Completed", "data_key": "is_completed", "width": 100 },
       { "id": "C", "title": "Delete task", "data_key": "", "width": 90 }
     ]
 

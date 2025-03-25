@@ -11,8 +11,8 @@ from anvil.tables import app_tables
 
 @anvil.server.callable
 def add_tasks():
-  app_tables.tasks.add_row(name="Buy the shopping", complete=False)
-  app_tables.tasks.add_row(name="Walk the dog", complete=False)
+  app_tables.tasks.add_row(name="Buy the shopping", is_completed=False)
+  app_tables.tasks.add_row(name="Walk the dog", is_completed=False)
 
 
 @anvil.server.callable
@@ -22,13 +22,13 @@ def get_tasks():
 
 @anvil.server.callable
 def add_task(name):
-  app_tables.tasks.add_row(name=name, complete=False)
+  app_tables.tasks.add_row(name=name, is_completed=False)
 
 
 @anvil.server.callable
-def update_task(task, complete):
+def update_task(task, is_completed):
   if app_tables.tasks.has_row(task):
-	  task.update(complete=complete)
+	  task.update(is_completed=is_completed)
 
 
 @anvil.server.callable
