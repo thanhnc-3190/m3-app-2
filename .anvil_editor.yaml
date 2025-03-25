@@ -4,7 +4,10 @@ unique_ids:
     theme.css: LD25DOAVENGCAGHVIC66TNBPTMWZYA6M
   forms:
     Form1: 5XPAOMC2AOCWFJEJN2MSNYORY4SCZ5JY
-  modules: {}
+    Form1.ItemTemplate1: '1742893096946858113348695.2382'
+  modules:
+    Form1.ItemTemplate1._template: '1742893108943937976005410.1232'
+    Form1._template: '1742892900438783415209466.3347'
   scripts: {}
   server_modules:
     ServerModule1: '1742892643570404177285012.28754'
