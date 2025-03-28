@@ -20,6 +20,7 @@ class Form1(Form1Template):
   
   def get_tasks(self):
     tasks = anvil.server.call('get_tasks')
+    # add something
     self.tasks_panel.items = tasks
 
 
